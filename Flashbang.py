@@ -46,10 +46,6 @@ def on_press(key):
     try:
         if ENABLE_DEBUG_KEY and key == keyboard.Key.f9:
             threading.Thread(target=flashbang).start()
-        elif key == keyboard.Key.f10:
-            mouse_listener.stop()
-            keyboard_listener.stop()
-            root.quit()
     except AttributeError:
         pass
 
